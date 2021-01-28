@@ -6,7 +6,7 @@ type LayoutProps = {
 }
 
 const DefaultLayout: FunctionComponent<LayoutProps> = ({children, meta}) => {
-  const {title, description, titleAppendSiteName = false, url} =
+  const {title, description, titleAppendSiteName = false, url, ogImage} =
     meta || {}
   return (
     <>
@@ -14,6 +14,12 @@ const DefaultLayout: FunctionComponent<LayoutProps> = ({children, meta}) => {
         title={title}
         description={description}
         titleTemplate={titleAppendSiteName ? undefined : '%s'}
+        openGraph={{
+          title,
+          description,
+          url,
+          images: ogImage ? [ogImage] : undefined,
+        }}
         canonical={url}
       />
       {title && (
