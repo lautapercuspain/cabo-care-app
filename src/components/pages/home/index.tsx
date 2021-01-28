@@ -1,7 +1,7 @@
 import React, {FunctionComponent} from 'react'
 import Card from './card'
 import Link from 'next/link'
-import Image from 'next/image'
+// import Image from 'next/image'
 import {find} from 'lodash'
 import Markdown from 'react-markdown'
 import Header from './header'
@@ -77,7 +77,7 @@ const FeatureCard = (props: FeatureCardProps) => {
     <Card className="lg:col-span-2 flex items-center sm:bg-gray-900 bg-gradient-to-br from-blue-600 via-blue-600 to-indigo-600 text-white ">
       <div className="flex items-center py-2 ">
         <p className="sm:text-md p-2">{props.text}</p>
-        <Image
+        <img
           src={props.source}
           height={props.height}
           width={props.width}
@@ -100,12 +100,11 @@ const CardHorizontal: FunctionComponent<{
         <div className="flex sm:flex-row flex-col sm:space-x-5 space-x-0 sm:space-y-0 space-y-5 items-center sm:text-left text-center">
           {resource.poster && (
             <Link href={resource.path}>
-              <a className="block flex-shrink-0 sm:w-auto w-24">
-                <Image
+              <a className="block sm:w-auto w-24">
+                <img
                   src={resource.poster}
                   width={585}
                   height={331}
-                  layout="fixed"
                   className="w-full"
                   alt={`illustration for ${resource.title}`}
                 />

@@ -1,6 +1,6 @@
 import * as React from 'react'
 import {FunctionComponent} from 'react'
-import Image from 'next/image'
+// import Image from 'next/image'
 import Link from 'next/link'
 
 type HeaderProps = {
@@ -18,19 +18,18 @@ const Header: FunctionComponent<HeaderProps> = ({
 }) => {
   return (
     <header className="relative h-80 bg-gradient-to-r from-cc-green2 to-cc-green1 text-white md:-mt-5 md:rounded-b-lg  md:rounded-t-none rounded-lg ">
-      <div className="absolute right-0 top-0">
-        <Image
+      <div className="absolute right-0 top-0 pl-1">
+        <img
           src="/images/doctor-header.png"
-          layout="fixed"
           width={372}
-          height={320}
-          className=""
+          height={300}
+          className="h-80 ml-1"
           alt="Cabo Care"
         />
         </div>
       <div className="z-10 absolute left-30 top-20">
         <div className=" text-center pl-2 pr-2 lg:pl-20 space-y-5 max-w-2xl mx-auto">
-          <h2 className="sm:flex sm:justify-center xs:text-black md:text-black md:text-xl text-lg text-co text-left md:py-1 font-light leading-tight ">
+          <h2 className="sm:flex sm:justify-center sm:text-blue-300 xs:text-white md:text-white md:text-xl text-lg text-co text-left md:py-1 font-light leading-tight ">
             {subheading}
           </h2>
         {primaryCta ? (
