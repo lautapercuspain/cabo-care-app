@@ -17,13 +17,22 @@ const Header: FunctionComponent<HeaderProps> = ({
   primaryCta = {label: 'Descargala ahora', url: '/'},
 }) => {
   return (
-    <header className="md:px-16 px-8 md:py-40 md:-mt-5 md:rounded-b-lg md:rounded-t-none rounded-lg bg-gray-900 text-blue relative overflow-hidden">
+    <header className="relative h-80 bg-gradient-to-r from-cc-green2 to-cc-green1 text-white md:-mt-5 md:rounded-b-lg  md:rounded-t-none rounded-lg ">
+      <div className="absolute right-0 top-0">
+        <Image
+          src="/images/doctor-header.png"
+          layout="fixed"
+          width={372}
+          height={320}
+          className=""
+          alt="Cabo Care"
+        />
+        </div>
       <div className="z-10 absolute left-30 top-20">
-        <div className="text-center space-y-5 max-w-2xl mx-auto ">
-          <h2 className="md:text-xl text-lg text-co text-left font-light leading-tight text-white">
+        <div className=" text-center pl-2 pr-2 lg:pl-20 space-y-5 max-w-2xl mx-auto">
+          <h2 className="sm:flex sm:justify-center xs:text-black md:text-black md:text-xl text-lg text-co text-left md:py-1 font-light leading-tight ">
             {subheading}
           </h2>
-        </div>
         {primaryCta ? (
           <div className="pt-10 flex md:flex-row flex-col md:space-y-0 space-y-4 space-x-2">
             {primaryCta.url && (
@@ -35,16 +44,9 @@ const Header: FunctionComponent<HeaderProps> = ({
             )}
           </div>
         ) : null}
+         </div>
       </div>
-      <Image
-        src="/images/header-cabo-care.png"
-        layout="fill"
-        priority={true}
-        quality={100}
-        objectFit="cover"
-        className="absolute left-0 top-0 py-10"
-        alt="Cabo Care"
-      />
+    
     </header>
   )
 }
