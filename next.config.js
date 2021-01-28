@@ -1,8 +1,7 @@
 const withSvgr = require(`next-svgr`)
-const withBundleAnalyzer = require(`@next/bundle-analyzer`)
 const withPlugins = require(`next-compose-plugins`)
 const rehypeShiki = require(`rehype-shiki`)
-const checkEnv = require(`@47ng/check-env`).default
+// const checkEnv = require(`@47ng/check-env`).default
 const withImages = require(`next-images`)
 const withMDX = require(`@next/mdx`)({
   extension: /\.mdx?$/,
@@ -20,9 +19,9 @@ const withMDX = require(`@next/mdx`)({
 })
 
 
-checkEnv({
-  required: [`NEXT_PUBLIC_DEPLOYMENT_URL`],
-})
+// checkEnv({
+//   required: [`NEXT_PUBLIC_DEPLOYMENT_URL`],
+// })
 
 
 const IMAGE_HOST_DOMAINS = [
@@ -38,9 +37,6 @@ const nextConfig = {
 
 module.exports = withPlugins(
   [
-    withBundleAnalyzer({
-      enabled: process.env.ANALYZE === `true`,
-    }),
     withSvgr,
     withImages(),
     withMDX({
