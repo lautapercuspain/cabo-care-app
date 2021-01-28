@@ -30,6 +30,7 @@ const IMAGE_HOST_DOMAINS = [
 
 const nextConfig = {
   reactStrictMode: true,
+  target: 'serverless',
   images: {
     domains: IMAGE_HOST_DOMAINS,
   },
