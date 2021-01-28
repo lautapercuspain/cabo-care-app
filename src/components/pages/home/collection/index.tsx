@@ -40,9 +40,7 @@ const Collection: FunctionComponent<CollectionProps> = ({
           >
             {image && (
               <Link href={path}>
-                <a
-                  className="sm:w-12 w-12 flex-shrink-0 flex justify-center items-center "
-                >
+                <a className="sm:w-12 w-12 flex-shrink-0 flex justify-center items-center ">
                   <Image
                     src={image}
                     width={imageSize}
@@ -54,9 +52,7 @@ const Collection: FunctionComponent<CollectionProps> = ({
             )}
             <div className="ml-3">
               <Link href={path}>
-                <a
-                  className="hover:text-blue-600"
-                >
+                <a className="hover:text-blue-600">
                   <h4 className="text-lg font-semibold leading-tight">
                     <Textfit mode="multi" min={14} max={17}>
                       {title}

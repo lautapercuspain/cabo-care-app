@@ -6,12 +6,7 @@ module.exports = {
   priority: 0.7,
   sitemapSize: 5000,
   generateRobotsTxt: true,
-  exclude: [
-    '/discord',
-    '/_next',
-    '/404',
-
-  ],
+  exclude: ['/discord', '/_next', '/404'],
   robotsTxtOptions: {
     policies: [
       {
@@ -21,11 +16,7 @@ module.exports = {
       {
         userAgent: '*',
         allow: ['/'],
-        disallow: [
-          '/_next',
-          '/purchase',
-          '/404',
-        ],
+        disallow: ['/_next', '/purchase', '/404'],
       },
     ],
   },

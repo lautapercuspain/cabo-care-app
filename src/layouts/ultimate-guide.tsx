@@ -1,6 +1,5 @@
 import React, {FunctionComponent} from 'react'
 import {NextSeo} from 'next-seo'
-import Contributors from 'components/contributors'
 import Image from 'next/image'
 import Link from 'next/link'
 import {useRouter} from 'next/router'
@@ -14,7 +13,6 @@ type LayoutProps = {
     ogImage?: any
     coverImage?: {url: string; alt: string}
     author?: {name: string; image: string; path: string} | undefined
-    contributors?: {name: string; type: string; image: string; path: string}[]
     state?: string
   }
 }
@@ -31,7 +29,6 @@ const UltimateGuideLayout: FunctionComponent<LayoutProps> = ({
     ogImage,
     coverImage,
     author,
-    contributors,
     state,
   } = meta
 
@@ -104,7 +101,6 @@ const UltimateGuideLayout: FunctionComponent<LayoutProps> = ({
             <div>{children}</div>
           </main>
           <footer className="mt-8 border-t border-gray-200 py-10 flex sm:flex-row flex-col-reverse justify-between sm:items-start items-center sm:text-left text-center">
-            {contributors && <Contributors contributors={contributors} />}
             <EditLink className="sm:mb-0 mb-16" />
           </footer>
         </article>

@@ -1,6 +1,5 @@
 import React, {FunctionComponent} from 'react'
 import {NextSeo} from 'next-seo'
-import Contributors from '../components/contributors'
 
 type LayoutProps = {
   meta?: {
@@ -49,9 +48,6 @@ const FancyGuideLayout: FunctionComponent<LayoutProps> = ({
           </h1>
 
           <main>{children}</main>
-          <footer>
-            {contributors && <Contributors contributors={contributors} />}
-          </footer>
         </article>
       </div>
     </>

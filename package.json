@@ -7,19 +7,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "yarn make-tags-sitemap",
-    "build": "yarn test:ci && next build",
-    "postbuild": "NODE_ENV=production next-sitemap",
+    "build": "next build",
     "build:style": "tailwind build src/styles/index.css -o src/styles/output.css",
     "start": "next start",
     "test": "jest --watch",
-    "pree2e": "rm -rf .nyc_output coverage .next || true",
     "check-coverage-limits": "nyc report --reporter=text-summary --check-coverage --statements 100",
     "format": "yarn format:index && yarn format:src",
     "format:index": "prettier --write \"*.{js,ts,json,md}\"",
     "format:src": "prettier --write \"src/**/*.{js,ts,tsx,md,mdx}\"",
-    "analyze": "ANALYZE=true next build",
-    "make-tags-sitemap": "NODE_ENV=production node tags-sitemap.js",
     "lint": "eslint --ext ts --ext tsx --fix src/"
   },
   "dependencies": {

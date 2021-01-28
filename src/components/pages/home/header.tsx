@@ -9,7 +9,6 @@ type HeaderProps = {
     label?: string
     url?: string
   }
-
 }
 
 const Header: FunctionComponent<HeaderProps> = ({

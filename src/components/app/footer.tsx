@@ -1,8 +1,7 @@
 import * as React from 'react'
 import {FunctionComponent} from 'react'
 import Link from '../link'
-import Image from 'next/image';
-
+import Image from 'next/image'
 
 const about = [
   {
@@ -31,9 +30,7 @@ const Item: FunctionComponent<{
 }> = ({children, path}) => (
   <li className="py-1 md:text-sm text-base leading-relaxed">
     <Link href={path} activeClassName="underline">
-      <a
-        className="hover:text-blue-600 transition-colors ease-in-out duration-150"
-      >
+      <a className="hover:text-blue-600 transition-colors ease-in-out duration-150">
         {children}
       </a>
     </Link>
@@ -46,13 +43,15 @@ const FooterNavigation: FunctionComponent = () => {
       <div className="space-y-5 pl-5 h-full flex flex-col md:items-start items-center lg:w-72 w-full">
         <Link href="/">
           <a className="flex md:flex-row flex-col lg:items-start md:items-center items-center md:text-left text-center lg:space-x-2 md:space-x-2 md:space-y-0 space-y-2">
-            <Image  
-              src={"https://is3-ssl.mzstatic.com/image/thumb/Purple114/v4/64/90/b5/6490b502-d6e1-2499-515c-af3226625075/AppIcon-1x_U007emarketing-0-5-0-0-85-220.png/200x200bb.png"}
+            <Image
+              src={
+                'https://is3-ssl.mzstatic.com/image/thumb/Purple114/v4/64/90/b5/6490b502-d6e1-2499-515c-af3226625075/AppIcon-1x_U007emarketing-0-5-0-0-85-220.png/200x200bb.png'
+              }
               width={280}
               height={280}
-              alt={`Cabo Care Los Cabos`} 
-              className="md:w-8 w-12 flex-shrink-0" 
-              />
+              alt={`Cabo Care Los Cabos`}
+              className="md:w-8 w-12 flex-shrink-0"
+            />
             <div className="mt-1 text-md  tracking-tight">
               {`CaboCare es una App cuya mision es la de salvar y mejorar la vida de las personas.`}
             </div>
@@ -61,14 +60,11 @@ const FooterNavigation: FunctionComponent = () => {
       </div>
       <div className="grid md:grid-cols-2 grid-cols-1 lg:pr-6 md:gap-10 md:text-left text-center md:items-start items-center md:w-auto w-full">
         {/* <Title>Content</Title> */}
-        
+
         {/* <Title>About</Title> */}
         <ul>
           {about.map((link) => (
-            <Item
-              path={link.path}
-              key={link.path}
-            >
+            <Item path={link.path} key={link.path}>
               {link.label}
             </Item>
           ))}
@@ -86,9 +82,7 @@ const Footer: FunctionComponent = () => {
         <small className="space-x-6 py-6 text-xs w-full flex items-center md:justify-end justify-center text-gray-500">
           <div>©cabocare</div>
           <Link href="/privacy">
-            <a>
-              Terms & Conditions
-            </a>
+            <a>Terms & Conditions</a>
           </Link>
         </small>
       </footer>

@@ -10,7 +10,9 @@ const ResourceLink = ({url, title}) => {
             Recommended Resource
           </p>
           <a
-            onClick={()=>{console.log('clicked')}}
+            onClick={() => {
+              console.log('clicked')
+            }}
             target="_blank"
             href={url}
           >

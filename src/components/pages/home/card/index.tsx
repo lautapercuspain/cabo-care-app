@@ -41,12 +41,6 @@ const Card: FunctionComponent<CardProps> = ({
       {image && path && (
         <Link href={path}>
           <a
-            onClick={() => {
-              track('clicked home page resource', {
-                resource: path,
-                linkType: 'image',
-              })
-            }}
             className="block flex-shrink-0 sm:w-auto w-20"
           >
             <Image
@@ -68,12 +62,6 @@ const Card: FunctionComponent<CardProps> = ({
           (path ? (
             <Link href={path}>
               <a
-                onClick={() => {
-                  track('clicked home page resource', {
-                    resource: path,
-                    linkType: 'text',
-                  })
-                }}
                 className="hover:text-blue-600"
               >
                 <h3 className="text-xl font-bold tracking-tight leading-tight mb-2">
