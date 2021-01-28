@@ -29,9 +29,6 @@ module.exports = {
             a: {
               color: `${theme('colors.blue.600')} !important`,
             },
-            'strong > a': {
-              color: `${theme('colors.blue.600')} !important`,
-            },
             code: {
               padding: '3px 5px',
               borderRadius: 5,
