@@ -21,27 +21,31 @@ const Home: FunctionComponent = () => {
         <div className="grid lg:grid-cols-8 grid-cols-1 gap-5">
           <FeatureCard
             width={85}
+            bgValue="bg-cc-blueDark"
             height={85}
             source="/images/promo.png"
-            text="Encuentra promociones de servicios medicos cerca de ti"
+            text="Llama al hospital más cercano en caso de emergencia"
           />
           <FeatureCard
+            bgValue="bg-cc-orange"
             width={85}
             height={85}
             source="/images/marker.png"
-            text="Encuentra promociones de servicios medicos cerca de ti"
+            text="Encuentra hospitales, doctores y farmacias cerca de ti"
           />
           <FeatureCard
+            bgValue="bg-cc-blueSoft"
             width={75}
             height={67}
             source="/images/search.png"
-            text="Encuentra promociones de servicios medicos cerca de ti"
+            text="Accede a promociones exclusives de servicios medicos cada mes"
           />
           <FeatureCard
+            bgValue="bg-cc-green1"
             width={72}
             height={72}
             source="/images/doctor.png"
-            text="Encuentra promociones de servicios medicos cerca de ti"
+            text="Guarda doctores, hospitales, farmacias y promociones en tus favoritos"
           />
         </div>
         <div className="grid lg:grid-cols-12 grid-cols-1 gap-5">
@@ -69,11 +73,14 @@ interface FeatureCardProps {
   height: number
   width: number
   text: string
+  bgValue: string
 }
 
 const FeatureCard = (props: FeatureCardProps) => {
   return (
-    <Card className="lg:col-span-2 flex items-center sm:bg-gray-900 bg-gradient-to-br from-blue-600 via-blue-600 to-indigo-600 text-white ">
+    <Card
+      className={`${props.bgValue} lg:col-span-2 flex items-cente text-white`}
+    >
       <div className="flex items-center py-2 ">
         <p className="sm:text-md p-2">{props.text}</p>
         <img
@@ -114,13 +121,13 @@ const CardHorizontal: FunctionComponent<{
               {resource.name}
             </h2>
             <Link href={resource.path}>
-              <a className="hover:text-cc-green2">
+              <a className="hover:text-cc-green2 pt-2 mb-2">
                 <h3 className="text-xl font-bold leading-tighter">
                   {resource.title}
                 </h3>
               </a>
             </Link>
-            <Markdown className="prose prose-sm max-w-none">
+            <Markdown className="prose prose-sm max-w-none pt-2">
               {resource.description}
             </Markdown>
           </div>
