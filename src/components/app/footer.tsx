@@ -45,7 +45,7 @@ const FooterNavigation: FunctionComponent = () => {
           <a className="flex md:flex-row flex-col lg:items-start md:items-center items-center md:text-left text-center lg:space-x-2 md:space-x-2 md:space-y-0 space-y-2">
             <Image
               src={
-                './images/cabo-care.png'
+                '/images/cabo-care.png'
               }
               width={280}
               height={280}

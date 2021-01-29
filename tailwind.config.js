@@ -17,7 +17,8 @@ module.exports = {
       gray: colors.blueGray,
       cc: {
         green1: '#5CC6BC',
-        green2: '#185ED6'
+        green2: '#15A9BF',
+        blueDark: '#2264AA'
       },
     },
     extend: {

@@ -17,7 +17,7 @@ const Header: FunctionComponent<HeaderProps> = ({
   primaryCta = {label: 'Descargala ahora', url: '/'},
 }) => {
   return (
-    <header className="relative h-80 bg-gradient-to-r from-cc-green2 to-cc-green1 text-white md:-mt-5 md:rounded-b-lg  md:rounded-t-none rounded-lg ">
+    <header className="relative h-80 bg-gradient-to-r from-cc-green1 to-cc-green2 text-white md:-mt-5 md:rounded-b-lg  md:rounded-t-none rounded-lg ">
       <div className="absolute right-0 top-0 pl-1 lg:visible ">
         <Image
           src="/images/doctor-header.png"
@@ -37,7 +37,7 @@ const Header: FunctionComponent<HeaderProps> = ({
             <div className="pt-10 flex md:flex-row flex-col md:space-y-0 space-y-4 space-x-2">
               {primaryCta.url && (
                 <Link href={primaryCta.url}>
-                  <a className="md:w-auto w-full px-5 py-3 text-center rounded-md bg-blue-600 text-white font-semibold shadow-lg hover:bg-indigo-600 transform hover:scale-105 transition-all duration-150 ease-in-out">
+                  <a className="md:w-auto w-full px-5 py-3 text-center rounded-md bg-cc-blueDark text-white font-semibold shadow-lg hover:bg-green-200 transform hover:scale-105 transition-all duration-150 ease-in-out">
                     {primaryCta.label}
                   </a>
                 </Link>
