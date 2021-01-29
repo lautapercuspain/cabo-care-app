@@ -7,7 +7,6 @@ import Markdown from 'react-markdown'
 import Header from './header'
 import homepageData from './homepage-data'
 
-
 const Home: FunctionComponent = () => {
   const seguridadMedica: any = find(homepageData, {id: 'seguridad-medica'})
   const saludMedica: any = find(homepageData, {id: 'tu-salud'})
@@ -88,7 +87,6 @@ const FeatureCard = (props: FeatureCardProps) => {
     </Card>
   )
 }
-
 
 const CardHorizontal: FunctionComponent<{
   resource: Resource

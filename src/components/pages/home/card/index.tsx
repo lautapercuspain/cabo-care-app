@@ -40,9 +40,7 @@ const Card: FunctionComponent<CardProps> = ({
     >
       {image && path && (
         <Link href={path}>
-          <a
-            className="block flex-shrink-0 sm:w-auto w-20"
-          >
+          <a className="block flex-shrink-0 sm:w-auto w-20">
             <Image
               src={image}
               width={160}
@@ -61,9 +59,7 @@ const Card: FunctionComponent<CardProps> = ({
         {title &&
           (path ? (
             <Link href={path}>
-              <a
-                className="hover:text-blue-600"
-              >
+              <a className="hover:text-blue-600">
                 <h3 className="text-xl font-bold tracking-tight leading-tight mb-2">
                   {title}
                 </h3>

@@ -16,12 +16,18 @@ module.exports = {
       ...colors,
       gray: colors.blueGray,
       cc: {
-        green1: '#185ED6',
-        green2: '#48B1CE'
+        green1: '#5CC6BC',
+        green2: '#185ED6'
       },
     },
     extend: {
-      colors: {},
+      colors: {
+        cc: { 
+          orange:'#FAA917',
+          blue: '#3E86D9',
+          green:'#5CC6BC'
+        }
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {

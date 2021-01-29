@@ -45,7 +45,7 @@ const FooterNavigation: FunctionComponent = () => {
           <a className="flex md:flex-row flex-col lg:items-start md:items-center items-center md:text-left text-center lg:space-x-2 md:space-x-2 md:space-y-0 space-y-2">
             <Image
               src={
-                'https://is3-ssl.mzstatic.com/image/thumb/Purple114/v4/64/90/b5/6490b502-d6e1-2499-515c-af3226625075/AppIcon-1x_U007emarketing-0-5-0-0-85-220.png/200x200bb.png'
+                './images/cabo-care.png'
               }
               width={280}
               height={280}
@@ -59,9 +59,6 @@ const FooterNavigation: FunctionComponent = () => {
         </Link>
       </div>
       <div className="grid md:grid-cols-2 grid-cols-1 lg:pr-6 md:gap-10 md:text-left text-center md:items-start items-center md:w-auto w-full">
-        {/* <Title>Content</Title> */}
-
-        {/* <Title>About</Title> */}
         <ul>
           {about.map((link) => (
             <Item path={link.path} key={link.path}>

@@ -8,7 +8,6 @@ type LayoutProps = {
     titleAppendSiteName?: boolean
     url?: string
     ogImage?: any
-    contributors?: {name: string; type: string; image: string; path: string}[]
   }
 }
 
@@ -16,14 +15,7 @@ const FancyGuideLayout: FunctionComponent<LayoutProps> = ({
   children,
   meta = {},
 }) => {
-  const {
-    title,
-    description,
-    titleAppendSiteName = false,
-    url,
-    ogImage,
-    contributors,
-  } = meta
+  const {title, description, titleAppendSiteName = false, url, ogImage} = meta
   return (
     <>
       <NextSeo
