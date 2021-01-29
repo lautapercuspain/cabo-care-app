@@ -20,15 +20,12 @@ module.exports = {
         green2: '#15A9BF',
         blueDark: '#2264AA',
         blueSoft: '#3DA5D9',
+        orange: '#FAA917',
       },
     },
     extend: {
       colors: {
-        cc: {
-          orange: '#FAA917',
-          blue: '#3E86D9',
-          green: '#5CC6BC',
-        },
+        cc: {},
       },
       typography: (theme) => ({
         DEFAULT: {
