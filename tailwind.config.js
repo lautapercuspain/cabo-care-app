@@ -24,39 +24,6 @@ module.exports = {
       },
     },
     extend: {
-      colors: {
-        cc: {},
-      },
-      typography: (theme) => ({
-        DEFAULT: {
-          css: {
-            color: `${theme('colors.black')} !important`,
-            a: {
-              color: `${theme('colors.blue.600')} !important`,
-            },
-            code: {
-              padding: '3px 5px',
-              borderRadius: 5,
-              background: theme('colors.gray.100'),
-            },
-            h1: {
-              fontSize: theme('fontSize.3xl'),
-              lineHeight: theme('lineHeight.tight'),
-              fontWeight: theme('fontWeight.bold'),
-            },
-            h2: {
-              fontSize: theme('fontSize.xl'),
-              lineHeight: theme('lineHeight.snug'),
-              fontWeight: theme('fontWeight.bold'),
-            },
-            h3: {
-              fontSize: theme('fontSize.lg'),
-              lineHeight: theme('lineHeight.normal'),
-              fontWeight: theme('fontWeight.extrabold'),
-            },
-          },
-        },
-      }),
       screens: {
         xs: '375px',
         sm: '640px',
