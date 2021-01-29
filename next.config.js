@@ -16,11 +16,16 @@ const withMDX = require(`@next/mdx`)({
   },
 })
 
-
+const IMAGE_HOST_DOMAINS = [
+  `is3-ssl.mzstatic.com`,
+]
 
 const nextConfig = {
   reactStrictMode: true,
   target: 'serverless',
+  images: {
+    domains: IMAGE_HOST_DOMAINS,
+  },
 }
 
 module.exports = withPlugins(
