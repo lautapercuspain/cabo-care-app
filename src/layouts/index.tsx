@@ -25,7 +25,7 @@ const DefaultLayout: FunctionComponent<LayoutProps> = ({children, meta}) => {
       {title && (
         <h1 className="flex justify-center text-2xl leading-tight">{title}</h1>
       )}
-      <main className="max-w-screen-md mx-auto sm:pt-10 pt-4 sm:pb-16 pb-8">
+      <main className="max-w-screen-md mx-auto sm:pt-10 pt-4 sm:pb-16 pb-8 bg-white">
         {children}
       </main>
     </>

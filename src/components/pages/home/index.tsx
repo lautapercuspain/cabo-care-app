@@ -114,7 +114,7 @@ const CardHorizontal: FunctionComponent<{
               {resource.name}
             </h2>
             <Link href={resource.path}>
-              <a className="hover:text-blue-600">
+              <a className="hover:text-cc-green2">
                 <h3 className="text-xl font-bold leading-tighter">
                   {resource.title}
                 </h3>

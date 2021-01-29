@@ -15,7 +15,6 @@ import 'focus-visible'
 
 declare global {
   interface Window {
-    ahoy: any
     _cio: any
     fbq: any
     becomeUser: any

@@ -22,6 +22,7 @@ const Header: FunctionComponent<HeaderProps> = ({
         <Image
           src="/images/doctor-header.png"
           quality={100}
+          loading="eager"
           width={372}
           height={320}
           className="h-80 ml-1"
@@ -37,7 +38,7 @@ const Header: FunctionComponent<HeaderProps> = ({
             <div className="pt-10 flex md:flex-row flex-col md:space-y-0 space-y-4 space-x-2">
               {primaryCta.url && (
                 <Link href={primaryCta.url}>
-                  <a className="md:w-auto w-full px-5 py-3 text-center rounded-md bg-cc-blueDark text-white font-semibold shadow-lg hover:bg-green-200 transform hover:scale-105 transition-all duration-150 ease-in-out">
+                  <a className="md:w-auto w-full px-5 py-3 text-center rounded-md bg-cc-blueDark text-white font-semibold shadow-lg hover:bg-blueSoft transform hover:scale-110 transition-all duration-150 ease-in-out">
                     {primaryCta.label}
                   </a>
                 </Link>
