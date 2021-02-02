@@ -2,7 +2,6 @@ import Link from 'next/link'
 import ResourceLink from './resource-link'
 import Card from './card'
 import HeaderCard from './header-card'
-import QuestionReveal from './question-reveal'
 import Callout from './callout'
 import ProseSection from './prose-section'
 import CheatSheet from './cheat-sheet'
@@ -14,7 +13,6 @@ const mdxComponents = {
   ResourceLink,
   Card,
   HeaderCard,
-  QuestionReveal,
   Callout,
   ProseSection,
   CheatSheet,

@@ -16,9 +16,7 @@ const withMDX = require(`@next/mdx`)({
   },
 })
 
-const IMAGE_HOST_DOMAINS = [
-  `is3-ssl.mzstatic.com`,
-]
+const IMAGE_HOST_DOMAINS = [`calendar.google.com`]
 
 const nextConfig = {
   reactStrictMode: true,

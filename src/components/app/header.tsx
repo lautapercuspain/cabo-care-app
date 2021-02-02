@@ -6,11 +6,11 @@ import Image from 'next/image'
 const Header: FunctionComponent = () => {
   return (
     <>
-      <header className="h-15 px-5 py-3 sm:mb-5 mb-3 border-b border-gray-100 flex items-center justify-between">
-        <div className="flex items-center justify-between w-full max-w-screen-xl mx-auto">
-          <div className="flex items-center">
+      <header className="h-15 px-5 py-3 xs:justify-start mb-8 border-b border-gray-100">
+        <div className="flex justify-center md:justify-start w-full max-w-screen-xl mx-auto">
+          <div className="flex xs:justify-start sm:justify-start md:justify-start">
             <Link href="/">
-              <a className="flex items-center">
+              <a className="flex">
                 <Image
                   src="/images/logo.png"
                   layout="fixed"
@@ -20,7 +20,7 @@ const Header: FunctionComponent = () => {
                   quality={100}
                   objectFit="cover"
                   alt="Cabo Care"
-                  className="w-8 mr-1"
+                  className="w-8 mr-1 m-3"
                 />
               </a>
             </Link>

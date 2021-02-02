@@ -18,14 +18,13 @@ const Header: FunctionComponent<HeaderProps> = ({
 }) => {
   return (
     <header className="relative h-80 bg-gradient-to-r from-cc-green1 to-cc-green2 text-white md:-mt-5 md:rounded-b-lg  md:rounded-t-none rounded-lg ">
-      <div className="absolute right-0 top-0 pl-1 lg:visible ">
+      <div className="hidden sm:block absolute right-0 top-0 pl-1 ">
         <Image
           src="/images/doctor-header.png"
           quality={100}
-          loading="eager"
           width={372}
           height={320}
-          className="h-80 ml-1"
+          className="h-80 ml-1 visible"
           alt="Cabo Care"
         />
       </div>
@@ -45,6 +44,22 @@ const Header: FunctionComponent<HeaderProps> = ({
               )}
             </div>
           ) : null}
+          {/* <Image
+              src="https://calendar.google.com/googlecalendar/images/googleplay/googleplay_es-419_2x_r1.png"
+              quality={100}
+              width={152}
+              height={45}
+              className="visible m-16"
+              alt="Cabo Care"
+            />
+            <Image
+                  src="https://calendar.google.com/googlecalendar/images/googleplay/googleplay_es-419_2x_r1.png"
+                  quality={100}
+                  width={152}
+                  height={45}
+                  className="visible m-16"
+                  alt="Cabo Care"
+                /> */}
         </div>
       </div>
     </header>
