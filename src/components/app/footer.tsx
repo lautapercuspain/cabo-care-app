@@ -44,16 +44,14 @@ const FooterNavigation: FunctionComponent = () => {
         <Link href="/">
           <a className="flex md:flex-row flex-col lg:items-start md:items-center items-center md:text-left text-center lg:space-x-2 md:space-x-2 md:space-y-0 space-y-2">
             <Image
-              src={
-                '/images/cabo-care.png'
-              }
+              src={'/images/cabo-care.png'}
               width={280}
               height={280}
-              alt={`Cabo Care Los Cabos`}
-              className="md:w-8 w-12 flex-shrink-0"
+              alt={`Cabo Care en Los Cabos`}
+              className=""
             />
-            <div className="mt-1 text-md  tracking-tight">
-              {`CaboCare es una App cuya mision es la de salvar y mejorar la vida de las personas.`}
+            <div className="mx-24 mt-1 text-sm  tracking-tight">
+              {`CaboCare es una App cuya mision es la de ayudar a salvar y mejorar la vida de las personas.`}
             </div>
           </a>
         </Link>

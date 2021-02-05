@@ -6,8 +6,7 @@ const homepageData = [
     description: `Integramos tecnología que te da la seguridad de poder estar cuidado las 24/7. 
       No importa si tienes una emergencia o simplemente estás buscando una farmacia, 
       Cabocare te conecta con los servicios de salud más cercanos.`,
-    path:
-      '/talks/egghead-what-if-the-real-10x-developer-is-the-friends-we-made-along-the-way',
+    path: '/#',
     poster: '/images/seguridad-medica.png',
     hls_url: '/',
   },
@@ -19,8 +18,7 @@ const homepageData = [
       que se responda es clave. Es por eso que ponemos a tu 
       disposición la llamada de emergencia que te conecta al
       hospital más cercano en caso de que lo necesites.`,
-    path:
-      '/talks/egghead-what-if-the-real-10x-developer-is-the-friends-we-made-along-the-way',
+    path: '/#',
     poster: '/images/confianza.png',
     hls_url: '/',
   },
